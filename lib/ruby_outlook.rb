@@ -14,7 +14,7 @@ module RubyOutlook
 
     def initialize
       @user_agent = "RubyOutlookGem/" << RubyOutlook::VERSION
-      @api_host = "https://outlook.office365.com"
+      @api_host = "https://outlook.office.com"
       @enable_fiddler = false
     end
 
@@ -29,7 +29,7 @@ module RubyOutlook
     def make_api_call(method, url, token, params = nil, payload = nil)
 
       conn_params = {
-        :url => 'https://outlook.office365.com'
+        :url => 'https://outlook.office.com'
       }
 
       if @enable_fiddler
